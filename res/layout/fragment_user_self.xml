@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:padding="20sp" >
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp" >
+
+        <TextView 
+            android:text="@string/uid"
+			android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uid"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp" >
+
+        <TextView 
+            android:text="@string/name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp" >
+
+        <TextView 
+            android:text="@string/fullName"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp" >
+
+        <TextView 
+            android:text="@string/email"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp" >
+
+        <TextView 
+            android:text="@string/created"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/created"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp" >
+
+        <TextView 
+            android:text="@string/modified"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/modified"
+            android:text="" />
+    </TableRow>
+
+</TableLayout>
