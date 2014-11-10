@@ -10,6 +10,10 @@ Prerequisites
 Installation
 -------------
 
+ * Import in your favorite IDE
+ * Create an application through our Developer Portal at https://devportal.samsungsami.io and save the `APP_ID`
+ * Edit and change the value of `APP_ID` with the ID of the application you just created
+
 More about SAMI
 ---------------
 
