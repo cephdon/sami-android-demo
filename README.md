@@ -11,7 +11,8 @@ Installation
 -------------
 
  * Import in your favorite IDE
- * Create an application through our Developer Portal at https://devportal.samsungsami.io and save the `APP_ID`
+ * Create an application through our Developer Portal at https://devportal.samsungsami.io and make a note of the client ID, this is the value that you will need to set in `Config.java`
+  * If you don't know where is the client ID is, check out http://developer.samsungsami.io/sami/sami-documentation/developer-user-portals.html
  * Edit `src/io/samsungsami/androidclient/Config.java` and change the value of `APP_ID` with the ID of the application you just created
 
 More about SAMI
