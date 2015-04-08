@@ -10,9 +10,10 @@ Prerequisites
 Installation
 -------------
 
+ * Create an Application in devportal.samsungsami.io:
+  * The Redirect URI is set to 'http://localhost:9000/authorize'.
+  * Choose "Client credentials, auth code, implicit" for OAuth 2.0 flow.
  * Import in your favorite IDE
- * Create an application through our Developer Portal at https://devportal.samsungsami.io and make a note of the client ID, this is the value that you will need to set in `Config.java`
-  * If you don't know where is the client ID is, check out http://developer.samsungsami.io/sami/sami-documentation/developer-user-portals.html
  * Edit `src/io/samsungsami/androidclient/Config.java` and change the value of `APP_ID` with the ID of the application you just created
 
 More about SAMI
@@ -24,9 +25,9 @@ The full SAMI API specification with examples can be found at http://developer.s
 
 To create and manage your services and devices on SAMI visit developer portal at http://devportal.samsungsami.io
 
-Licence and Copyright
+License and Copyright
 ---------------------
 
 Licensed under the Apache License. See LICENCE.
 
-Copyright (c) 2014 Samsung Electronics Co., Ltd.
+Copyright (c) 2015 Samsung Electronics Co., Ltd.
