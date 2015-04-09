@@ -17,6 +17,7 @@ import io.samsungsami.model.DeviceTypesEnvelope;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,8 @@ import android.widget.Toast;
 
 public class RegisterActivity extends Activity implements SamiClient {
 	static RegisterActivity instance;
+	private static final String TAG = RegisterActivity.class.getSimpleName();
+
 	Sami sami;
 	
 	// UI members
@@ -102,6 +105,10 @@ public class RegisterActivity extends Activity implements SamiClient {
 			@Override
 			public void onApiResult(Object result) {
 				DeviceTypeArray deviceTypeArray = (DeviceTypeArray) result;
+				if (result == null) {
+					Log.d(TAG, "getDeviceTypesIntoSpinner: onApiResult: result is null");
+					return;
+				}
 				
 				String[] spinnerArray = new String[deviceTypeArray.getDeviceTypes().size()];
 				int i = 0;
