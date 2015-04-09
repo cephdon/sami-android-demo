@@ -13,6 +13,8 @@ Installation
  * Create an Application in devportal.samsungsami.io:
   * The Redirect URI is set to 'http://localhost:9000/authorize'.
   * Choose "Client credentials, auth code, implicit" for OAuth 2.0 flow.
+  * Under "PERMISSIONS", check "Read" for "Profile". 
+  * Click the "Add Device Type" button. Pick a few device types to set the proper permissions per the following rules. If you just want to see data of a device on the demo app, check "Read" permission for the corresponding device type. If you want to create a new device on the demo app, check "Read" and "Write" permissions for the corresponding device type.
  * Import in your favorite IDE
  * Edit `src/io/samsungsami/androidclient/Config.java` and change the value of `APP_ID` with the ID of the application you just created
 
