@@ -240,7 +240,7 @@ public class MessagesActivity extends Activity implements ActionBar.TabListener,
 	    			try {
 	    				NormalizedMessagesEnvelope envelope = sami.getMessagesQueryApi()
 	    						.getNormalizedMessages( 
-	    								uid, null, mid, null, null, null, null, null, null, null);
+	    								null, null, mid, null, null, null, null, null, null, null);
 	    						
 	    				messages = envelope.getData();
 	    			} catch (ApiException e) {
